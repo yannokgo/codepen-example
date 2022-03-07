@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 
+            TODO: Remove useless lines, Add support for Inkscape or else(if easy)
+         -->
+
+<svg
+   viewBox="0 0 225 100"
+   version="1.1"
+   id="svg35"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs23">
+    <clipPath
+       id="myClip">
+      <!--
+                 Everything outside the circle will be
+                 clipped and therefore invisible.
+               -->
+      <circle
+         cx="40"
+         cy="35"
+         r="35"
+         id="circle3" />
+    </clipPath>
+    <linearGradient
+       id="e"
+       x1="6.3260829"
+       y1="27.264436"
+       x2="79.029224"
+       y2="99.967577"
+       gradientTransform="matrix(2.4772655,0,0,0.40367091,32.74034,-63.78744)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="red"
+         id="stop2" />
+      <stop
+         offset="50%"
+         stop-color="black"
+         stop-opacity="0.5"
+         id="stop4" />
+      <stop
+         offset="100%"
+         stop-color="blue"
+         id="stop6" />
+    </linearGradient>
+    <!-- Define the pattern -->
+    <filter
+       width="1.0587872"
+       height="1.5168454"
+       y="-0.25842271"
+       x="-0.029393613"
+       style="color-interpolation-filters:sRGB;"
+       id="filter262">
+      <!-- <feGaussianBlur stdDeviation="0.01" result="result1" id="feGaussianBlur250" /> -->
+      <feBlend
+         in2="SourceGraphic"
+         result="fbSourceGraphic"
+         mode="multiply"
+         id="feBlend252" />
+      <!-- <feTurbulence baseFrequency="0.8" type="fractalNoise" seed="0" numOctaves="3" result="result3" id="feTurbulence254" /> -->
+      <feDisplacementMap
+         in="fbSourceGraphic"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         result="result2"
+         in2="fbSourceGraphic"
+         id="feDisplacementMap256" />
+      <feMorphology
+         radius="1"
+         operator="dilate"
+         result="result4"
+         id="feMorphology258" />
+      <feBlend
+         mode="screen"
+         in2="result2"
+         id="feBlend260" />
+    </filter>
+    <filter
+       id="coloredSpots2"
+       x="-0.09"
+       y="-0.09"
+       width="1.18"
+       height="1.18"
+       filterUnits="objectBoundingBox"
+       primitiveUnits="userSpaceOnUse"
+       color-interpolation-filters="linearRGB">
+      <feTurbulence
+         type="fractalNoise"
+         baseFrequency="0.02 0.01"
+         numOctaves="1"
+         seed="2"
+         stitchTiles="stitch"
+         result="turbulence"
+         id="feTurbulence15" />
+      <feColorMatrix
+         type="matrix"
+         values="1 0 0 0 0                             0 1 0 0 0                             0 0 1 0 0                             0 0 0 0 1"
+         in="turbulence"
+         result="colormatrix"
+         id="feColorMatrix17" />
+      <feColorMatrix
+         type="saturate"
+         values="4"
+         in="colormatrix"
+         result="colormatrix1"
+         id="feColorMatrix19" />
+      <feGaussianBlur
+         stdDeviation="3 3"
+         in="componentTransfer"
+         edgeMode="none"
+         result="blur"
+         id="feGaussianBlur21" />
+      <feComponentTransfer
+         in="composite"
+         result="componentTransfer"
+         id="feComponentTransfer31">
+        <feFuncR
+           type="table"
+           tableValues="1 0 -1"
+           id="feFuncR23" />
+        <feFuncG
+           type="table"
+           tableValues="1 0 1"
+           id="feFuncG25" />
+        <feFuncB
+           type="table"
+           tableValues="1 -1 1"
+           id="feFuncB27" />
+        <feFuncA
+           type="identity"
+           id="feFuncA29" />
+      </feComponentTransfer>
+      <feComposite
+         in="componentTransfer"
+         in2="SourceAlpha"
+         operator="in"
+         result="composite"
+         id="feComposite33" />
+    </filter>
+    <filter
+       id="coloredFlame"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       filterUnits="objectBoundingBox"
+       primitiveUnits="userSpaceOnUse"
+       color-interpolation-filters="linearRGB">
+      <feTurbulence
+         type="fractalNoise"
+         baseFrequency="0.041 0.013"
+         numOctaves="1"
+         seed="2"
+         stitchTiles="stitch"
+         result="turbulence"
+         id="feTurbulence36" />
+      <feTurbulence
+         type="fractalNoise"
+         baseFrequency="0.035 0.012"
+         numOctaves="1"
+         seed="1"
+         stitchTiles="stitch"
+         result="turbulence1"
+         id="feTurbulence38" />
+      <feMerge
+         result="merge"
+         id="feMerge44">
+        <feMergeNode
+           in="turbulence1"
+           result="mergeNode"
+           id="feMergeNode40" />
+        <feMergeNode
+           in="turbulence"
+           result="mergeNode1"
+           id="feMergeNode42" />
+      </feMerge>
+      <feColorMatrix
+         type="saturate"
+         values="10"
+         in="merge"
+         result="colormatrix"
+         id="feColorMatrix46" />
+      <feColorMatrix
+         type="matrix"
+         values="1 0 0 0 0         0 1 0 0 0         0 0 1 0 0         0 0 0 10 0"
+         in="colormatrix"
+         result="colormatrix1"
+         id="feColorMatrix48" />
+      <feDisplacementMap
+         in="colormatrix1"
+         in2="colormatrix"
+         scale="40"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         result="displacementMap"
+         id="feDisplacementMap50" />
+      <feComposite
+         in="displacementMap"
+         in2="SourceAlpha"
+         operator="in"
+         result="composite1"
+         id="feComposite52" />
+    </filter>
+    <!--
+            TODO: add more filters @ https://yoksel.github.io/svg-filters/#/presets/
+         -->
+    <path
+       id="MyPath"
+       fill="none"
+       stroke="red"
+       d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50" />
+    <pattern
+       id="sanbornHatch"
+       width="4"
+       height="4"
+       patternTransform="rotate(45 0 0)"
+       patternUnits="userSpaceOnUse">
+      <line
+         x1="0"
+         y1="0"
+         x2="0"
+         y2="4"
+         style="stroke:black; stroke-width:3;fill:black;"
+         id="line56" />
+    </pattern>
+    <!--  -->
+    <pattern
+       id="myPatt"
+       width="4"
+       height="4"
+       patternTransform="rotate(45 0 0)"
+       patternUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="100%"
+         height="100%"
+         fill="hsla(0,0%,100%,0.2)"
+         id="rect59" />
+      <path
+         d="M0 0h10v20H0zM30 0v10H10V0zM10 10h10v20H10zM40 10v10H20V10zM20 20h10v20H20zM50 20v10H30V20zM30 30h10v20H30zM20 30v10H0V30zM10 20v10h-20V20zM30-10h10v20H30z"
+         stroke-width="1"
+         stroke="hsla(258.5,59.4%,59.4%,1)"
+         fill="none"
+         id="path61" />
+    </pattern>
+    <pattern
+       id="aleluja"
+       patternUnits="userSpaceOnUse"
+       width="40"
+       height="40"
+       patternTransform="scale(0.5) rotate(55)">
+      <rect
+         x="0"
+         y="0"
+         width="100%"
+         height="100%"
+         fill="hsla(0,0%,100%,1)"
+         id="rect64" />
+      <path
+         d="M0 0h10v20H0zM30 0v10H10V0zM10 10h10v20H10zM40 10v10H20V10zM20 20h10v20H20zM50 20v10H30V20zM30 30h10v20H30zM20 30v10H0V30zM10 20v10h-20V20zM30-10h10v20H30z"
+         stroke-width="2"
+         stroke="hsla(258.5,59.4%,59.4%,1)"
+         fill="none"
+         id="path66" />
+    </pattern>
+    <pattern
+       id="concentricCircles"
+       patternUnits="userSpaceOnUse"
+       width="46.5"
+       height="46.5"
+       patternTransform="scale(0.5) rotate(55)">
+      <rect
+         x="0"
+         y="0"
+         width="100%"
+         height="100%"
+         fill="hsla(0,0%,100%,0.5)"
+         id="rect69" />
+      <path
+         d="M27.31-2.917a5 5 0 010 5.834m-8.12 0a5 5 0 010-5.834m-4.827 7.501a10 10 0 010-9.169m17.774.001a10 10 0 010 9.169M10.181 7.36a15 15 0 01-.001-14.722m26.14 0a15 15 0 010 14.724m-9.01 36.22a5 5 0 010 5.835m-8.12 0a5 5 0 010-5.834m-4.827 7.501a10 10 0 010-9.169m17.774.001a10 10 0 010 9.169M10.181 53.86a15 15 0 01-.001-14.723m26.14 0a15 15 0 010 14.724m6.12-27.693a5 5 0 010-5.834m-4.827 7.5a10 10 0 010-9.169M33.431 30.61a15 15 0 01-.001-14.722M4.06 20.332a5 5 0 010 5.835m4.827-7.501a10 10 0 010 9.169m4.183-11.947a15 15 0 010 14.724"
+         stroke-linecap="square"
+         stroke-width="1"
+         stroke="hsla(258.5,59.4%,59.4%,1)"
+         fill="none"
+         id="path71" />
+      <path
+         d="M43.582 42.44a5 5 0 015.835 0m-7.501-4.827a10 10 0 019.169 0M39.138 33.43a15 15 0 0114.724 0m-56.781 9.01a5 5 0 015.836 0m-7.501-4.827a10 10 0 019.169 0M-7.362 33.43a15 15 0 0114.724 0M49.417 4.06a5 5 0 01-5.834 0m7.501 4.827a10 10 0 01-9.169 0m11.946 4.182a15 15 0 01-14.723.001M2.917 4.06a5 5 0 01-5.834 0m7.501 4.827a10 10 0 01-9.169 0M7.36 13.069a15 15 0 01-14.722.001m27.694 6.12a5 5 0 015.835 0m0 8.12a5 5 0 01-5.834 0m7.5 4.827a10 10 0 01-9.168 0m.001-17.774a10 10 0 019.169 0m2.776 21.956a15 15 0 01-14.723.001m0-26.14a15 15 0 0114.724 0"
+         stroke-linecap="square"
+         stroke-width="1"
+         stroke="hsla(339.6,82.2%,51.6%,1)"
+         fill="none"
+         id="path73" />
+    </pattern>
+    <!-- 
+              TODO More patterns at  https://pattern.monster/    
+           -->
+    <filter
+       width="1"
+       height="1"
+       y="0"
+       x="0"
+       style="color-interpolation-filters:sRGB;"
+       id="filter2515">
+      <feTurbulence
+         baseFrequency="0.4"
+         type="fractalNoise"
+         seed="0"
+         numOctaves="5"
+         result="result1"
+         id="feTurbulence2511" />
+      <feDisplacementMap
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="30"
+         in="SourceGraphic"
+         in2="result1"
+         id="feDisplacementMap2513" />
+    </filter>
+  </defs>
+  <style
+     id="style25">
+           .small, .heavy { font: italic 25px sans-serif; }
+           svg * { transition: all 0.5s; }
+        
+    </style>
+  <text
+     x="20.25979"
+     y="42.17675"
+     class="heavy"
+     id="text29"
+     fill="hsla(20,100%,50%,1)"
+     stroke="hsla(100,100%,50%,1)"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:normal;font-family:sans-serif;filter:url(#filter2515)">Rhinnoveeros</text>
+  <!-- * Ref: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes -->
+  <text
+     x="20.124451"
+     y="41.976677"
+     class="heavy"
+     id="text29-3"
+     fill="hsla(20,100%,50%,1)"
+     stroke="hsla(100,100%,50%,1)"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:normal;font-family:sans-serif;fill:#ff0000">Rhinnoveeros</text>
+  <circle
+     cx="0"
+     cy="75"
+     r="40"
+     fill="hsla(50,100%,50%,1)"
+     id="circle33"
+     style="filter:url(#coloredFlame)" />
+  <circle
+     cx="110"
+     cy="75"
+     r="40"
+     fill="hsla(50,100%,50%,1)"
+     id="circle34"
+     style="filter:url(#coloredSpots2)" />
+  <circle
+     cx="150"
+     cy="75"
+     r="50"
+     fill="url(#star)"
+     stroke-width="20"
+     stroke="url(#star3)"
+     id="circle31" />
+  <circle
+     cx="180"
+     cy="75"
+     r="40"
+     fill="hsla(50,100%,50%,1)"
+     id="circle35"
+     style="filter:url(#coloredSpots2)" />
+</svg>

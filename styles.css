@@ -1,0 +1,21 @@
+#hi {
+    filter: url(#filter2515)
+}
+* {
+    transition: feTurbulence 2s;
+}
+
+#eee {
+    display: grid;
+    place-items: center;
+    color: blue;
+    animation: hueAnim 3s linear infinite;
+}
+
+@keyframes hueAnim {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* filterNodes[3].getElementsByTagNameNS("http://www.w3.org/2000/svg", "feTurbulence")[0].numOctaves = 2 */
